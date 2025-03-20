@@ -44,16 +44,44 @@ $arr = [
 ];
 $result = Arrays::associate($arr, 'name');
 
+// print_r($result);
 
-$field_values_array = $_POST['field_name'];
 
+$main_language = $_POST['main_language'];
+echo "<pre>";
+print_r($main_language);
+
+echo "////////////////";
+echo "////////////////";
+echo "////////////////";
+echo "////////////////";
+echo "////////////////\n";
+echo "////////////////\n";
+echo "////////////////\n";
+
+
+$field_values_array = $_POST['translate_language'];
 echo "<pre>";
 print_r($field_values_array);
-print_r($result);
 
-echo json_encode($field_values_array,JSON_FORCE_OBJECT);
+echo "////////////////";
+echo "////////////////";
+echo "////////////////";
+echo "/////////////////\n";
+echo "/////////////////\n";
+echo "/////////////////\n";
 
 
 
 
+
+
+
+
+echo $b=json_encode($field_values_array,JSON_FORCE_OBJECT);
+
+$a=json_decode($b, false, 512, JSON_BIGINT_AS_STRING);
+
+echo "<pre>";
+print_r($a);
 ?>
