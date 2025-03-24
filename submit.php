@@ -72,12 +72,6 @@ echo "/////////////////\n";
 echo "/////////////////\n";
 
 
-
-
-
-
-
-
 echo $b=json_encode($field_values_array,JSON_FORCE_OBJECT);
 
 $a=json_decode($b, false, 512, JSON_BIGINT_AS_STRING);

@@ -110,7 +110,7 @@ function modal_verbs($value)
     );
 
     if (in_array($value, $arr)) {
-        return   "[hisar_modalVerbs value='" . $value . "']";
+        return   "[helix_modalVerbs value='" . $value . "']";
     } else {
         return $value;
     }
@@ -170,7 +170,7 @@ function prepositions($value)
     );
 
     if (in_array($value, $arr)) {
-        return  "[hisar_preposition value='" . $value . "']";
+        return  "[helix_preposition value='" . $value . "']";
     } else {
         return $value;
     }
@@ -208,7 +208,7 @@ function ComplexPrepositions($value)
     );
 
     if (in_array($value, $arr)) {
-        return  "[hisar_ComplexPreposition value='" . $value . "']";
+        return  "[helix_ComplexPreposition value='" . $value . "']";
     } else {
         return $value;
     }
@@ -229,7 +229,7 @@ function prepositionsOfTime($value)
     );
 
     if (in_array($value, $arr)) {
-        return  "[hisar_prepositionsOfTime value='" . $value . "']";
+        return  "[helix_prepositionsOfTime value='" . $value . "']";
     } else {
         return $value;
     }
@@ -256,7 +256,7 @@ function conjunctions($value)
     );
 
     if (in_array($value, $arr)) {
-        return  "[hisar_conjunction value='" . $value . "']";
+        return  "[helix_conjunction value='" . $value . "']";
     } else {
         return $value;
     }
@@ -264,12 +264,12 @@ function conjunctions($value)
 
 
 
-function html($value)
+function html($value,$name)
 {
 
 ?>
     <div class="itemContainer">
-        <input type="text" name="field_name[]" value="<?php echo  $value ?>"><a href="javascript:void(0);" class="remove_button"><img src="remove-icon.png"></a>
+        <input type="text" name="'field_name'[]" value="<?php echo  $value ?>"><a href="javascript:void(0);" class="remove_button"><img src="remove-icon.png"></a>
     </div>
 <?php
 }
